@@ -1,3 +1,1 @@
-#!/bin/bash
-olleh_mode=$(stat -c "%a" olleh)
-chmod "$olleh_mode" hello
+#!/bin/bash\n\nmode=$(stat -c %a olleh)\n\nchmod $mode hello
