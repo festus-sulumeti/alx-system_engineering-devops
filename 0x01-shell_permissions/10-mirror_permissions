@@ -1,1 +1,2 @@
-#!/bin/bash\n\nmode=$(stat -c %a olleh)\n\nchmod $mode hello
+#!/bin/bash
+chmod --refrence=olleh hello
