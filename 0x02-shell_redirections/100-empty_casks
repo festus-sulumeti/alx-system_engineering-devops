@@ -1,2 +1,0 @@
-#!/bin/bash
-find . -mindepth 1 -maxdepth 2 -empty -exec basename {} \; 
