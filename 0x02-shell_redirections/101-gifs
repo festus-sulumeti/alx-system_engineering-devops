@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -type f -iname "*.gif" | sed -e 's|./||' -e 's|.gif$||i' | sort -f | awk '{print}' && echo
