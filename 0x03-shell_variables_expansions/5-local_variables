@@ -1,1 +1,2 @@
-
+#!/bin/bash
+(set -o posix; set) | sed -n '/^[A-Za-z_][A-Za-z0-9_]*=/p'; env; declare -F
