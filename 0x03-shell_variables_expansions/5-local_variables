@@ -1,0 +1,2 @@
+#!/bin/bash
+(set -o posix; set) | awk -F= '/^[A-Za-z_][A-Za-z0-9_]*=/ {print "Local variables:\n"$0}; END {print "\nEnvironment variables:"; system("env"); print "\nFunctions:"; system("declare -F")}'
